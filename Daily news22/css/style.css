@@ -1,0 +1,645 @@
+
+
+*{
+    font-family: 'Cairo', sans-serif;  
+    box-sizing: border-box;
+ }
+ body{
+   font-family: 'Cairo', sans-serif;
+     height: auto;
+     font-size: 14px;
+     background-color: #716698;
+ }
+ 
+ p{
+     cursor: pointer;
+     margin: 0;
+     line-height: 1.8;
+     font-size: 13px;
+     color: black;
+  
+ }
+ p:hover {
+     font-weight: bold;
+ }
+ h4{
+    font-weight: 600;
+    color: #5f5387;
+ }
+ .display-inline {
+     display: inline-block;
+ }
+
+ .disply-block{
+     display: table;
+ }
+ 
+ 
+ .opacity{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #0000005d;
+    z-index: 44;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+ }
+ .site {
+     background-color: white;
+     margin:  10px 0 ;
+   
+ }
+ header , .carousel-news ,.parts-details  ,.iraq   , .vedio , .about-us , footer{
+      padding: 8px;
+ }
+ .social {
+     margin-bottom: 2px;
+ }
+ .social i {
+    font-size: 29px;
+    margin-left: 6px;
+    cursor: pointer;
+    color: #38296acc;
+ }
+ .social i:hover{
+   color: rgb(38, 32, 39);
+ }
+ 
+.search {
+    margin-top: 5px;
+}
+ .search i {
+    color: white;
+    background:#38296acc ;
+     padding: 6px;
+     transition: all 0.3s ease-in-out;
+    cursor: pointer;
+ }
+ .search i:hover {
+    color: bisque;  
+    
+}
+ .search input{
+     position: absolute;
+     width: 175px;
+ }
+ 
+ 
+ .logo{
+     float: left;
+    
+ }
+ .logo img {
+     width: 60px;
+ }
+ 
+ /*********** ul parts *********/
+.last-news {
+    background: #38296acc;
+}
+.last-news ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.last-news ul li {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding: 8px 13px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.last-news ul li:hover ,.more:hover {
+    background: rgb(214, 206, 206);
+    color: #38296acc;
+    font-weight: bold;
+}
+
+/*****marquee***/
+.breaking-news-section {
+    padding: 2px ;
+    display: flex;
+
+}
+#btext {
+
+   width: max-content;
+   font-size: 16px;
+   color: white;
+   background-color: darkred;
+   font-weight: bold;
+   margin: auto 0 ;
+ 
+   border-radius: 5px;
+}
+
+
+.breaking-news {
+   padding: 10px;
+   color: black;
+   font-weight: 600;
+   display: inline-flex;
+}
+/*
+.breaking-news:hover , .social-icons i:hover{
+  color: black;
+   cursor: pointer;
+  
+}
+*/
+.bntime
+{
+   display: inline-block;
+   color: rgba(255,255,255,0.5);
+   padding: 0 10px ;
+   font-size: 12px;
+
+}
+
+/*******************carousel***************************/
+
+.carousel-news .carousel {
+    margin-top: 38px;
+   
+}
+.carousel-news .item {
+    height:388px;
+  
+
+}
+.carousel-news .item img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.carousel-news .item:hover > img{
+    transform: scale(1.1, 1.1);
+
+}
+.carousel-news .carousel-caption {
+    z-index: 55;
+}
+.carousel-news .last-iraq-title {
+    text-align: right;
+    overflow: hidden;
+}
+.carousel-news .last-iraq-title p {
+    color: white;
+}
+
+.carousel-news .last-iraq-title h3 {
+    background-color: #5f5387;
+    border-radius: 8px;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+}
+
+.carousel-news .icon-next ,
+ .carousel-news .icon-prev{
+    font-size: 17px;
+    background: black;
+    z-index: 55;
+    color: white;
+}
+
+.carousel-news .carousel-control[data-slide="next"] {
+    left: 0;
+}
+
+
+/********recent news ************/
+
+.header-section{
+border-bottom: 1px solid  lightgray;
+margin-bottom: 15px;
+}
+.recent {
+    border-top: 3px solid #5f5387;
+
+    padding: 5px;
+}
+
+
+.recent-new .row {
+    margin: 0;
+}
+.recent-img {
+    height: 100px;
+    overflow: hidden;
+}
+
+.recent-img img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.recent-new .row:hover  .recent-img img {
+    transform: scale(1.1,1.1);
+}
+.more {
+    background-color: #5f5387;
+    color: white;
+    font-weight: bold;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.history{
+    position: absolute;
+    font-size: 9px;
+    color: gray;
+    left: 24px;
+    bottom: 5px;
+}
+.recent-details{
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+}
+.recent-details p{
+    font-size: 13px;
+    padding-top: 15px;
+
+}
+.recent-new{
+    margin: 5px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+/*************      parts details  ***********/ 
+
+
+/********************* iraq *******************/
+
+.iraq  .recent-new{
+    height: 330px;
+}
+.iraq .recent-img{
+    height: 170px;
+}
+
+/******************************    vedio      *********************************/
+
+.vedio img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.vedio .carousel-cell {
+    transition: all 0.6s ease-in-out;
+    margin-right: 5px;
+}
+.vedio .header-section{
+    border-bottom: none;
+    margin-bottom: 20px;
+    width: max-content;
+    border: 1px solid #271c4a;
+    border-radius: 5px;
+    padding: 0 41px
+   
+    }
+.vedio {
+    overflow: hidden;
+    background-color:#d7e2ec9e;
+    position: relative;
+    
+}
+.vedio div.col-md-12 {
+    overflow: hidden;
+    padding: 20px;
+   
+}
+
+.vedio div.col-md-11 a {
+    color: gray;
+}
+.vedio .flickity-page-dots{
+    display: none;
+}
+
+.vedio .flickity-prev-next-button.previous ,
+.vedio .flickity-prev-next-button.next {
+    color: #271c4a;
+    background: rgb(201 188 219);
+    border-radius: 0;
+    height: 27px;
+    width: 88px;
+   position: absolute;
+   top: 19px;
+}
+.vedio .flickity-prev-next-button.next {
+    left: 35px;
+}
+.vedio .carousel{
+    padding: 35px 0 ;
+    overflow: hidden;
+    border-top: 3px solid #271c4a;
+}
+
+.vedio .carousel-title {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+
+}
+.vedio .carousel-title i {
+    position: absolute;
+    right: 45%;
+    top: 45%;
+    font-size: 25px;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    z-index: 66666;
+}
+.vedio .carousel-title:hover i{
+    color:red ;
+    transform: scale(1.1  , 1.1);
+
+}
+.vedio .carousel-title:hover .opacity {
+    display: none;
+}
+.vedio .carousel-title:hover img {
+    transform: scale(1.1 ,1.1);
+}
+.vedio .carousel-title h2 {
+    background: #5f5387;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 17px;
+    margin: 11px;
+    color: white;
+    z-index: 55555;
+    cursor: pointer;
+}
+.vedio a  , .clock{
+    color: rgb(38, 32, 39);
+   
+}
+.vedio a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: #271c4a;
+}
+.carousel-text {
+padding: 6px;
+border: 1px solid grey;
+border-top: none;
+}
+/************************************    about us      *************************/
+
+.about-us {
+    background-image: repeating-linear-gradient(6deg , white , #271c4aa4 100% , rgb(196, 22, 196) 10% );
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+form  input  , form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-us {
+    padding: 20px 8px;
+}
+form input  , form textarea{
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid  #271c4a;
+    padding: 5px;
+}
+
+form {
+padding-right: 20px;
+}
+.contact-us i {
+    margin: 5px 25px;
+    color: #271c4a;
+    font-size: 25px ;
+}
+
+.contact-us .fa-whatsapp:hover {
+    font-weight: bold;
+    color: green;
+}
+.contact-us .fa-phone:hover {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.contact-us .fa-telegram:hover {
+    font-weight: bold;
+    color: rgb(111, 149, 175);
+}
+.contact-us button {
+    padding: 5px 10px ;
+    color: white;
+    background-color: #271c4a;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us button:hover {
+    color: #271c4a ;
+    background-color: #7e858c9e;
+}
+form {
+    border-left: 1px solid #271c4a;
+}
+.about-us-details  {
+    line-height: 3;
+}
+
+/********************************   footer     ******************************/
+footer {
+    background-color: #716698;
+    text-align: center;
+}
+footer img {
+    height: 50px ;
+    width: 50px;
+    cursor: pointer;
+}
+footer .footer-section-2 {
+    margin: 17px 0;
+}
+footer .footer-section-2 i {
+    color: white;
+    float: right;
+    margin-left: 5px;
+
+}
+
+footer .social {
+    margin-top: 10%;
+}
+
+footer .footer-section-2 i:hover {
+    color: #271c4a;
+    background: none;
+}
+.download {
+    color: white;
+    text-align: left;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 6px;
+    width: max-content;
+    float: left;
+    animation: light 1s infinite   ;
+}
+.download i {
+    float: left;
+    padding: 5px;
+  
+}
+.coptRight {
+    color: honeydew;
+    background-color: #38296a;
+    height: 39px;
+    margin-top: 11px;
+    padding: 7px;
+}
+/*******************************************************************/
+@keyframes light {
+
+    0% ,100% {
+        color: red;
+    }
+
+    50%{
+        color: white;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+
+    .vedio .carousel-cell {
+       
+        width: 100%;
+    }
+    .recent-img {
+        height: 200px;
+    }
+    
+}
+.fa-list {
+    display: none;
+}
+
+@media screen and (max-width:578px) {
+
+.search i.fa-search {
+    position: absolute;
+    float: right;
+    right: 3px;
+    top: 28px;
+    padding: 5px;
+}
+.list-parts{
+    display: none;
+}
+.search input {
+    top: 26px;
+    right: 23px;
+    width: 170px;
+    transition: all 1s ease-in;
+    position: relative;
+   
+}
+.search .close {
+    position: absolute;
+    display: block;
+    transition: all 0.5s ease-in;
+  
+
+}
+.social i {
+    font-size: 26px;
+    margin-left: 1px;
+}
+header .social i:hover {
+    color: rgb(223, 178, 119);
+}
+.fa-list {
+    border: 1px solid black;
+    padding: 5px;
+    position: absolute;
+    top: -58px;
+    right: 4px;
+    color: white;
+    background: #716698; 
+    display: inline-block;
+}
+.fa-list:hover{
+    background-color: white;
+    color: #716698;
+
+}
+.social {
+    float: left;
+    position: absolute;
+  
+}
+.social i.fa-search {
+    margin-left: 3px
+}
+
+}
+
+/********************************  mob style **************************/
+
+.parts-mob {
+    list-style: none;
+    position: fixed;
+    z-index: 555555555555;
+    height: 100vh;
+    top: 0px;
+    width: 40%;
+    text-align: right;
+    padding: 0 ;
+    background-image: repeating-linear-gradient(6deg , #aba5c0, #271c4afa  100% , rgb(196, 22, 196) 10% );
+    transition: all 0.8s ease-in;
+
+ }
+ .top {
+     top: -1000px;
+ }
+ .parts-mob  li {
+     color: white;
+
+     padding: 5px;
+     font-weight: bold;
+ }
+ .parts-mob  li:hover {
+     background-color: rgba(255,255,255,0.5);
+     color: #271c4a;
+ }
+
+.ul-mob .social-mob i {
+ 
+   margin-left: 3px;
+   font-size: 22px;
+   color: #38296a;
+}
+.ul-mob .social-mob {
+   
+    background-image: repeating-linear-gradient(6deg , #aba5c0, #271c4aa4 100% , rgb(196, 22, 196) 10% );
+    margin-top: 35%;
+}
+.ul-mob .social-mob i:hover {
+    color: #16102c
+}
+
+.fa-window-close {
+    font-size: 20px;
+}
